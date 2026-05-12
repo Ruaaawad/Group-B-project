@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.test_tmp/
+.venv/
+.idea/
+travel_agent_records/
+data/records.json

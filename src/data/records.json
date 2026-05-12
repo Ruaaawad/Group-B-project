@@ -1,0 +1,29 @@
+[
+  {
+    "Type": "client",
+    "Name": "Rachel George",
+    "Address Line 1": "1 Drumford Close",
+    "Address Line 2": "",
+    "Address Line 3": "",
+    "City": "Sydney",
+    "State": "NSW",
+    "Zip Code": "2000",
+    "Country": "Australia",
+    "Phone Number": "02 92659333",
+    "ID": 1
+  },
+  {
+    "Type": "airline",
+    "Company Name": "Jetstar",
+    "ID": 1
+  },
+  {
+    "Type": "flight",
+    "Client_ID": 1,
+    "Airline_ID": 1,
+    "Date": "2026-05-02 16:00",
+    "Start City": "Sydney",
+    "End City": "Melbourne",
+    "ID": 1
+  }
+]
