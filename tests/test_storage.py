@@ -96,13 +96,17 @@ class StorageTests(unittest.TestCase):
         storage = JSONStorage(self.temp_path / "records.json")
 
         with self.assertRaisesRegex(ValueError, "list of dictionaries"):
-            storage.save_records({"ID": 1, "Type": "client"})  # type: ignore[arg-type]
+            storage.save_records(  # type: ignore[arg-type]
+                {"ID": 1, "Type": "client"}
+            )
 
     def test_save_records_rejects_list_with_non_dictionary_item(self) -> None:
         storage = JSONStorage(self.temp_path / "records.json")
 
         with self.assertRaisesRegex(ValueError, "index 1"):
-            storage.save_records([{"ID": 1, "Type": "client"}, "invalid"])  # type: ignore[list-item]
+            storage.save_records(  # type: ignore[list-item]
+                [{"ID": 1, "Type": "client"}, "invalid"]
+            )
 
 
 if __name__ == "__main__":

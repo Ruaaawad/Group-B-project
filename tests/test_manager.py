@@ -24,7 +24,9 @@ class RecordManagerTests(unittest.TestCase):
                 "Phone Number": "01234",
             },
         )
-        self.airline = self.manager.create_record(AIRLINE, {"Company Name": "Sky Travel"})
+        self.airline = self.manager.create_record(
+            AIRLINE, {"Company Name": "Sky Travel"}
+        )
 
     def test_create_flight_requires_existing_relationships(self) -> None:
         with self.assertRaises(ValidationError):
