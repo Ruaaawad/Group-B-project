@@ -39,7 +39,9 @@ system.
 - Zip Code
 - Country
 - Phone Number
-
+  
+- Address Line 1, Address Line 2, and Address Line 3 are stored as separate fields. In the table view, they are combined into a single Full Address column for readability.
+  
 ### Airline Record
 
 - ID
